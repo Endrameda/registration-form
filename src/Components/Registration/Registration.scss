@@ -1,0 +1,40 @@
+@import "src/styles/system/vars";
+
+.registration {
+  max-width: 460px;
+  min-width: 360px;
+  width: 100%;
+  padding: 40px 30px;
+  margin: auto;
+  background: $white;
+  box-shadow: 0 12px 24px rgba(44, 39, 56, 0.02), 0px 32px 64px rgba(44, 39, 56, 0.04);
+  border-radius: 24px;
+
+  @media all and (max-width: 460px) {
+    padding: 30px 20px;
+  }
+
+  &__head {
+    margin-bottom: 56px;
+  }
+
+  &__title {
+    font-size: 34px;
+    line-height: 44px;
+    color: $black;
+    margin: 0 0 9px 0;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+    color: $black;
+
+    a {
+      font-size: 16px;
+      line-height: 22px;
+      color: $lightBlue;
+      text-decoration: none;
+    }
+  }
+}

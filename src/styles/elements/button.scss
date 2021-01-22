@@ -1,0 +1,34 @@
+.button {
+  background: $lightBlue;
+  box-shadow: 0 2px 4px rgba(44, 39, 56, 0.08), 0px 4px 8px rgba(44, 39, 56, 0.08);
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  padding: 18px 20px 17px;
+  border: 2px solid transparent;
+  color: $dirtWhite;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 12px 24px rgba(44, 39, 56, 0.08), 0 24px 48px rgba(44, 39, 56, 0.16);
+  }
+
+  &:active {
+    box-shadow: 0 12px 24px rgba(44, 39, 56, 0.08), 0 24px 48px rgba(44, 39, 56, 0.16);
+    border: 2px solid rgba(44, 39, 56, 0.86);
+  }
+  
+  &:disabled {
+    cursor: none;
+    pointer-events: none;
+    box-shadow: 0 4px 8px rgba(44, 39, 56, 0.08);
+    background-color: $disableButtonBg;
+    color: rgba($black, 0.5);
+    border: 2px solid transparent;
+  }
+}
